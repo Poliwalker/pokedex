@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/Assets/img/pokebola.ico">
+</head>
+<main>
+    <div class="container">
+        <div class="title-and-input">
+            <h1>BUSCADOR POKEMÓN</h1>
+            <form id="form">
+                <input type="number" name="number" id="number" placeholder="Ingrese un número" autocomplete="off">
+
+                <div class="submit-icon">
+                    <img src="/Assets/img/pokebola2.png" alt="">
+                    <input type="submit" value="CONSULTAR" id="submit">
+                </div>
+
+            </form>
+        </div>
+        <p class="msg"></p>
+        <div class="card-container">
+
+        </div>
+    </div>
+</main>
+
+<body>
+    <script src="/main.js"></script>
+    <script src="/request.js"></script>
+</body>
+
+</html>

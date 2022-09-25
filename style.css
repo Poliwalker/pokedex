@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(/Assets/img/fondo-pikachu-pokebola.jpg);
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 70px;
+	gap: 30px;
+}
+
+.title-and-input {
+	background-color: rgba(255, 0, 0, 0.9);
+	padding: 1.5rem 3rem;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	width: 100%;
+	max-width: 500px;
+}
+
+.title-and-input h1 {
+	font-size: 40px;
+	font-weight: 700;
+	font-family: 'nabla';
+}
+
+#form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+input[type='number'] {
+	background-color: blue;
+	color: white;
+	width: 300px;
+	height: 30px;
+	border-radius: 10px;
+	border: none;
+	text-align: center;
+	outline: none;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+
+input[type='number']:focus {
+	outline: none;
+}
+
+.submit-icon {
+	display: flex;
+	gap: 10px;
+}
+
+#form img {
+	width: 35px;
+	height: 35px;
+}
+
+input[type='submit'] {
+	color: red;
+	background-color: rgb(255, 255, 68);
+	padding: 0.2rem 3rem;
+	border-radius: 10px;
+	cursor: pointer;
+	font-family: fantasy;
+}
+
+.msg {
+	background-color: blue;
+	color: aliceblue;
+	border-radius: 10px;
+	width: 500px;
+	max-width: 300px;
+	text-align: center;
+}
+.fa-triangle-exclamation {
+	margin-right: 10px;
+}
+
+.sub-container {
+	background-color: cadetblue;
+	/* padding: 0.5rem 1rem 2rem 1rem; */
+	margin-bottom: 30px;
+	padding: 1rem;
+}
+
+.header-card {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-card p {
+	color: rgb(255, 255, 255);
+	background-color: black;
+	border-radius: 50%;
+	padding: 0.5rem;
+}
+
+.pc {
+	background-color: black;
+	color: aliceblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#card img {
+	width: 250px;
+	height: 300px;
+}
+
+.data {
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+	color: white;
+}
+
+.moves {
+	max-width: 300px;
+}
+
+.img-pokebola {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.img-pokebola img {
+	width: 30px;
+}
