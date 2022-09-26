@@ -7,19 +7,20 @@
 }
 
 body {
-	background-image: url(/Assets/img/fondo-pikachu-pokebola.jpg);
+	/* background-image: url(/Assets/img/fondo-pikachu-pokebola.jpg); */
+	background-color: rgb(222, 199, 243);
 }
 
 .container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 70px;
-	gap: 30px;
+	margin-top: 40px;
+	gap: 10px;
 }
 
 .title-and-input {
-	background-color: rgba(255, 0, 0, 0.9);
+	background-color: #ffca05;
 	padding: 1.5rem 3rem;
 	border-radius: 5px;
 	display: flex;
@@ -28,12 +29,21 @@ body {
 	gap: 10px;
 	width: 100%;
 	max-width: 500px;
+	box-shadow: -4px 16px 34px 20px rgba(0, 0, 0, 0.73);
+	-webkit-box-shadow: -4px 16px 34px 20px rgba(0, 0, 0, 0.73);
+	-moz-box-shadow: -4px 16px 34px 20px rgba(0, 0, 0, 0.73);
+}
+
+.title-and-input img {
+	width: 300px;
+	height: 150px;
 }
 
 .title-and-input h1 {
-	font-size: 40px;
+	font-size: 30px;
+	letter-spacing: 2px;
 	font-weight: 700;
-	font-family: 'nabla';
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #form {
@@ -45,7 +55,7 @@ body {
 }
 
 input[type='number'] {
-	background-color: blue;
+	background-color: #e95753;
 	color: white;
 	width: 300px;
 	height: 30px;
@@ -75,8 +85,8 @@ input[type='number']:focus {
 }
 
 input[type='submit'] {
-	color: red;
-	background-color: rgb(255, 255, 68);
+	color: blac;
+	background-color: #2e6db7;
 	padding: 0.2rem 3rem;
 	border-radius: 10px;
 	cursor: pointer;
@@ -84,7 +94,7 @@ input[type='submit'] {
 }
 
 .msg {
-	background-color: blue;
+	background-color: red;
 	color: aliceblue;
 	border-radius: 10px;
 	width: 500px;
@@ -98,6 +108,7 @@ input[type='submit'] {
 .sub-container {
 	background-color: cadetblue;
 	margin-bottom: 50px;
+	border-radius: 20px;
 	padding: 1rem;
 	box-shadow: -4px 16px 34px 20px rgba(0, 0, 0, 0.73);
 	-webkit-box-shadow: -4px 16px 34px 20px rgba(0, 0, 0, 0.73);
@@ -107,6 +118,7 @@ input[type='submit'] {
 .header-card {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 3px;
 }
 
 .header-card p {
@@ -117,7 +129,6 @@ input[type='submit'] {
 }
 
 .pc {
-	background-color: black;
 	color: aliceblue;
 	display: flex;
 	justify-content: center;
@@ -127,14 +138,26 @@ input[type='submit'] {
 #card {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	padding-top: 20px;
+	border-radius: 20px;
 }
 
 #card img {
 	width: 250px;
 	height: 300px;
 	padding-bottom: 20px;
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.titles {
+	background-color: black;
+	color: white;
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+	padding-left: 15px;
 }
 
 .data {
@@ -142,7 +165,9 @@ input[type='submit'] {
 	flex-direction: column;
 	background-color: black;
 	color: white;
+	border-radius: 0 0 10px 10px;
 	width: 100%;
+	padding-left: 15px;
 }
 
 .weigth {
