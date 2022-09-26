@@ -6,11 +6,7 @@ const mensaje = document.querySelector('.msg');
 
 //armado local storage //
 
-let pokemons = JSON.parse(localStorage.getItem('pokemones')) || [];
-
-const saveLocalStorage = (pokelist) => {
-	localStorage.setItem('pokemons', JSON.stringify(pokelist));
-};
+let pokemons = [];
 
 // fin local storage //
 
@@ -32,7 +28,6 @@ const obtenerPokemon = async (e) => {
 	pokemons = [fetchPokemon, ...pokemons];
 	form.reset();
 	inputNumber.value = '';
-	saveLocalStorage(pokemons);
 	renderizadoCartas(pokemons);
 };
 
