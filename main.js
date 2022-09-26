@@ -82,9 +82,9 @@ const printCard = (pokemon) => {
 	</div>
         <img src="${imagenPrincipal}" alt="pokemon">
     <div class="data">
-        <span class="weigth">PESO:${peso(pokemon.weight)}Kgs</span>
-        <span class="heigth">ALTURA:${alto(pokemon.height)}Mts</span>
-        <span class="moves">MOVIMIENTOS:${pokemon.moves[0].move.name},${
+        <span class="weigth">PESO: ${peso(pokemon.weight)}Kgs</span>
+        <span class="heigth">ALTURA: ${alto(pokemon.height)}Mts</span>
+        <span class="moves">MOVIMIENTOS: ${pokemon.moves[0].move.name},${
 		pokemon.moves[1].move.name
 	},${pokemon.moves[2].move.name}</span>  
     </div>
@@ -102,6 +102,16 @@ renderizadoCartas = (listaPokemon) => {
 		.join('');
 };
 // funcion iniciazion //
+
+// setTimeout(() => {
+// 	const removeCard = contenedor.remove();
+// 	return removeCard;
+// }, 10000);
+
+// setTimeout(() => {
+// 	const removeMsg = mensaje.remove();
+// 	return removeMsg;
+// }, 10000);
 
 const init = () => {
 	form.addEventListener('submit', obtenerPokemon);
