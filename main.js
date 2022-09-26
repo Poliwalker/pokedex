@@ -4,11 +4,7 @@ const form = document.getElementById('form');
 const contenedor = document.querySelector('.card-container');
 const mensaje = document.querySelector('.msg');
 
-//armado local storage //
-
 let pokemons = [];
-
-// fin local storage //
 
 const obtenerPokemon = async (e) => {
 	e.preventDefault();
@@ -25,7 +21,7 @@ const obtenerPokemon = async (e) => {
 		return;
 	}
 
-	pokemons = [fetchPokemon, ...pokemons];
+	pokemons = [fetchPokemon];
 	form.reset();
 	inputNumber.value = '';
 	renderizadoCartas(pokemons);
@@ -83,7 +79,7 @@ const printCard = (pokemon) => {
 <div id="card" style="background: ${colorFondo[pokemon.types[0].type.name]}">
     <div class="titles">
 	    <h2>${pokemon.forms[0].name.toUpperCase()}</h2>
-        <p>TIPO: ${pokemon.types[0].type.name},${pokemon.types[1].type.name}</p>
+        // <p>TIPO: ${pokemon.types[0].type.name}</p>
 	</div>
         <img src="${imagenPrincipal}" alt="pokemon">
     <div class="data">
